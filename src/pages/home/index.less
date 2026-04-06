@@ -1,0 +1,245 @@
+page {
+  background-color: #f7f8fa;
+}
+
+.home-page {
+  height: 100vh;
+}
+
+.banner {
+  background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+  padding: 40px 20px 60px;
+  position: relative;
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+
+    .banner-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .banner-sub {
+      font-size: 24px;
+      color: #fff;
+      background-color: #ff7043;
+      padding: 4px 12px;
+      border-radius: 20px;
+      align-self: flex-start;
+    }
+  }
+
+  .search-bar-wrapper {
+    position: absolute;
+    bottom: -24px;
+    left: 20px;
+    right: 20px;
+
+    .search-bar {
+      background-color: #fff;
+      height: 72px;
+      border-radius: 36px;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+      .search-icon {
+        font-size: 32px;
+        margin-right: 10px;
+      }
+
+      .search-input {
+        flex: 1;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.notice {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  .notice-tag {
+    color: #ff6a00;
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 16px;
+  }
+
+  .notice-text {
+    font-size: 26px;
+    color: #333;
+  }
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 24px;
+  margin: 0 20px;
+  padding-top: 20px;
+
+  .category-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .category-icon {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .category-name {
+      font-size: 24px;
+      color: #666;
+    }
+  }
+}
+
+.hot-recommend {
+  padding: 30px 20px;
+
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .hot-list {
+    white-space: nowrap;
+
+    .hot-item {
+      display: inline-flex;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-right: 20px;
+      width: 400px;
+      justify-content: space-between;
+
+      .hot-info {
+        display: flex;
+        flex-direction: column;
+
+        .hot-name {
+          font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .hot-sales {
+          font-size: 22px;
+          color: #999;
+          margin-bottom: 10px;
+        }
+
+        .hot-price {
+          font-size: 30px;
+          color: #ff6a00;
+          font-weight: bold;
+        }
+      }
+
+      .hot-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.product-section {
+  padding: 0 20px 20px;
+
+  .product-tabs {
+    white-space: nowrap;
+    margin-bottom: 20px;
+
+    .tab-item {
+      display: inline-block;
+      font-size: 28px;
+      color: #666;
+      margin-right: 40px;
+
+      &.active {
+        color: #ff6a00;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .product-card {
+      width: 48%;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      .product-img {
+        width: 100%;
+        height: 260px;
+      }
+
+      .product-info {
+        padding: 16px;
+
+        .product-name {
+          font-size: 28px;
+          color: #333;
+          margin-bottom: 8px;
+          display: block;
+        }
+
+        .product-sales {
+          font-size: 22px;
+          color: #999;
+          margin-bottom: 12px;
+          display: block;
+        }
+
+        .product-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .product-price {
+            font-size: 32px;
+            color: #ff6a00;
+            font-weight: bold;
+          }
+
+          .add-cart {
+            font-size: 36px;
+            background: #ffede0;
+            color: #ff6a00;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

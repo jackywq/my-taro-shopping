@@ -1,0 +1,170 @@
+page {
+  background-color: #f7f8fa;
+}
+
+.profile-page {
+  height: 100vh;
+}
+
+.header {
+  background: linear-gradient(to bottom, #f09559, #e07f43);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  position: relative;
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .username {
+      font-size: 36px;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .signature {
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.assets-card {
+  margin: -60px 20px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  .asset-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .asset-val {
+      font-size: 36px;
+      color: #ff6a00;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .asset-label {
+      font-size: 24px;
+      color: #666;
+    }
+  }
+
+  .asset-divider {
+    width: 2px;
+    height: 60px;
+    background-color: #eee;
+  }
+}
+
+.orders-section {
+  margin: 0 20px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .more {
+      font-size: 24px;
+      color: #999;
+      display: flex;
+      align-items: center;
+
+      .arrow {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .order-types {
+    display: flex;
+    justify-content: space-between;
+
+    .type-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .type-icon {
+        font-size: 56px;
+        margin-bottom: 16px;
+      }
+
+      .type-name {
+        font-size: 24px;
+        color: #666;
+      }
+    }
+  }
+}
+
+.menu-list {
+  margin: 0 20px 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0 20px;
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #f5f5f5;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .menu-left {
+      display: flex;
+      align-items: center;
+
+      .menu-icon {
+        font-size: 40px;
+        margin-right: 20px;
+      }
+
+      .menu-name {
+        font-size: 28px;
+        color: #333;
+      }
+    }
+
+    .menu-arrow {
+      font-size: 28px;
+      color: #ccc;
+    }
+  }
+}
