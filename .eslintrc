@@ -3,6 +3,8 @@
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-      "jsx-quotes": ["error", "prefer-double"]
+    // 关闭禁止 CommonJS 的规则
+    "import/no-commonjs": "off",
+    "jsx-quotes": ["error", "prefer-double"]
   }
 }
